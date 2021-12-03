@@ -23,6 +23,7 @@ class WeatherDataViewController: UIViewController {
     let emitterNode = SKEmitterNode(fileNamed: "Rain.sks")!
     // Snow
     let emitterNode2 = SKEmitterNode(fileNamed: "Snow.sks")!
+
     
     // Outlets for labels and images
     @IBOutlet var currentDate: UILabel!
@@ -67,6 +68,7 @@ class WeatherDataViewController: UIViewController {
         if weatherData.weather.lowercased() == "cloudy"{
             weatherImage.image = UIImage(named: "cloudy")
             weatherView.backgroundColor = UIColor(.gray)
+            
         }
         if weatherData.weather.lowercased() == "thunderstorms"{
             weatherImage.image = UIImage(named: "rainthunder")
@@ -116,6 +118,7 @@ class WeatherDataViewController: UIViewController {
         emitterNode2.particlePositionRange.dx = scene.frame.width
         view.addSubview(skView)
     }
+   
     
 }
 

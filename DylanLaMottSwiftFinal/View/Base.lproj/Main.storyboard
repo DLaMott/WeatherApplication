@@ -85,10 +85,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="300"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GRP-HG-NW8">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="185.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="221"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjD-1g-sQe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="115.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="151"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <color key="highlightedColor" systemColor="labelColor"/>
@@ -96,7 +96,7 @@
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLm-9l-hK4">
-                                                        <rect key="frame" x="0.0" y="125.5" width="394" height="25"/>
+                                                        <rect key="frame" x="0.0" y="161" width="394" height="25"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
@@ -104,7 +104,7 @@
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lky-Hf-zuu">
-                                                        <rect key="frame" x="0.0" y="160.5" width="394" height="25"/>
+                                                        <rect key="frame" x="0.0" y="196" width="394" height="25"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
@@ -115,18 +115,18 @@
                                                 <variation key="heightClass=compact-widthClass=compact" axis="vertical"/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="left" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rX4-5G-TbG">
-                                                <rect key="frame" x="0.0" y="195.5" width="394" height="64.5"/>
+                                                <rect key="frame" x="0.0" y="231" width="394" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuz-CD-uXE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="193" height="64.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="193" height="29"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
                                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <size key="shadowOffset" width="1" height="1"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" image="fharenheit" translatesAutoresizingMaskIntoConstraints="NO" id="faf-42-9Ef">
-                                                        <rect key="frame" x="201" y="0.0" width="193" height="64.5"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" image="29" translatesAutoresizingMaskIntoConstraints="NO" id="faf-42-9Ef">
+                                                        <rect key="frame" x="201" y="0.0" width="193" height="29"/>
                                                     </imageView>
                                                 </subviews>
                                                 <variation key="heightClass=regular-widthClass=compact" axis="horizontal"/>
@@ -279,7 +279,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fharenheit" width="72.5" height="64.5"/>
+        <image name="29" width="29" height="29"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

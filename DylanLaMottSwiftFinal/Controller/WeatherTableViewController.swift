@@ -46,6 +46,24 @@ class WeatherTableViewController: UITableViewController {
         
     }
     
+    // For Tableview row deletion
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+        {
+            // Return `false` if you do not want the
+            //  specified item to be editable.
+            return true
+        }
+        // Override to support editing the table view.
+        override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
+        {
+            if editingStyle == .delete {
+                // Delete the row from the data source
+                weather.remove(at: indexPath.row)
+                // Then, delete the row from the table itself
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+        }
+    
     
 
     
@@ -63,19 +81,24 @@ class WeatherTableViewController: UITableViewController {
         }
     }
     
-    
+    // Unwind to tableview
     @IBAction func unwindToWeatherList(_ segue: UIStoryboardSegue) {
+        
+        // Add source from viewcontroller
         let weatherAdd = segue.source as! WeatherAddViewController
         guard let weatherS = weatherAdd.weather else { return }
-        
+            // For row
             if let indexPath = tableView.indexPathForSelectedRow {
-                
+                // Remove position
                 weather.remove(at: indexPath.row)
+                // Insert new information at last index
                 weather.insert(weatherS, at: indexPath.startIndex)
-                tableView.deselectRow(at: indexPath, animated: true)
+                // Deselect row animation
+                //tableView.deselectRow(at: indexPath, animated: true)
         } else {
             weather.append(weatherS)
         }
+        // Reload tableview
         tableView.reloadData()
    }
 
