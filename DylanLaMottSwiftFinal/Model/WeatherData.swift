@@ -79,3 +79,5 @@ func parseCSV() -> [Weather]{
     }
     return allData
 }
+
+

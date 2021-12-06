@@ -3,13 +3,14 @@
 //  DylanLaMottSwiftFinal
 //
 //  Created by Dylan LaMott on 12/2/21.
-//
+//  Used to add cities to application
 
 import UIKit
 
 class WeatherAddViewController: UIViewController {
     
     var weather: Weather?
+    var ifk = parseCSV()
 
     @IBOutlet var weatherTextField: UITextField!
     @IBOutlet var TempTextField: UITextField!
@@ -39,15 +40,26 @@ class WeatherAddViewController: UIViewController {
         
         weather = Weather(state: state1, city: city1, temp: temp1, weather: weather1)
         performSegue(withIdentifier: "weatherList", sender: self)
+        /*
+         
+        Todo: Read from file and write to allowing for better data saving
+        var csvText = ""
+        let newLine = "\(state1), \(city1), \(temp1), \(weather1)"
+        var info1: [(String, String, String, String)] = []
+        for info in ifk{
+            info1.append(info)
+        }
+        
+        csvText.append(newLine)
+        
+        do {
+        try csvText.write(toFile: "/Users/dylanlamott/Documents/DylanLaMottSwiftFinal/DylanLaMottSwiftFinal/WeatherData.csv", atomically: true, encoding: String.Encoding.utf8)
+        } catch {
+                print("Failed to write file")
+                print("\(error)")
+            return
+            }
+        */
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
-}

@@ -82,7 +82,6 @@ class WeatherDataViewController: UIViewController {
             addSnow()
         }
     
-
     }
     
     // Function to add rain sprite
@@ -118,7 +117,5 @@ class WeatherDataViewController: UIViewController {
         emitterNode2.particlePositionRange.dx = scene.frame.width
         view.addSubview(skView)
     }
-   
-    
 }
 
