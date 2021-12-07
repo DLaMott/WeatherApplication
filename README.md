@@ -1,7 +1,7 @@
 # WeatherApplication
 Weather App made using Swift
 
-## Higlights:
+## Highlights:
 - Inofrmation is currently pulled from a csv file opon start up
 - State/city lists will be displayed to users within a table view
 - Table view functions for addiing, editing, and deleting cities enabled
